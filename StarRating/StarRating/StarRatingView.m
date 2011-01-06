@@ -13,29 +13,48 @@
 
 @implementation StarRatingView
 
-@synthesize stars;
+@synthesize star, highlightedStar;
 
-- (UIButton*)buttonWith:(UIImage*)star :(UIImage*)highlight :(NSUInteger)index {
-	StarView *b = [[StarView alloc] initWithFrame:CGRectMake(((star.size.width/2)*index), 0, star.size.width/2, star.size.height/2)];
-	[b setImage:star forState:UIControlStateNormal];
-	[b setImage:highlight forState:UIControlStateSelected];
-	[b setImage:highlight forState:UIControlStateHighlighted];
-	b.tag = index;
-	return b;
+- (void)setupView {
+	currentIdx = 0;
+	star = [[UIImage imageNamed:@"star.png"] retain];
+	highlightedStar = [[UIImage imageNamed:@"star_highlighted"] retain];        
+	for (int i=0; i<numberOfStars; i++) {
+		StarView *v = [[StarView alloc] initWithDefault:self.star highlighted:self.highlightedStar position:i];
+		[self addSubview:v];
+		[v release];
+	}
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-		currentIdx = 0;
-		UIImage *star = [UIImage imageNamed:@"star.png"];
-		UIImage *highlight = [UIImage imageNamed:@"star_highlighted"];        
-        [self addSubview:[self buttonWith:star :highlight :0]];
-		[self addSubview:[self buttonWith:star :highlight :1]];
-		[self addSubview:[self buttonWith:star :highlight :2]];
-		[self addSubview:[self buttonWith:star :highlight :3]];
+		numberOfStars = kDefaultNumberOfStars;
+		[self setupView];
     }
     return self;
+}
+
+- (id)initWithFrame:(CGRect)frame {
+	self = [super initWithFrame:frame];
+	if (self) {
+		numberOfStars = kDefaultNumberOfStars;
+		[self setupView];
+	}
+	return self;
+}
+
+- (id)initWithStars:(int)_numberOfStars {
+	self = [super initWithFrame:CGRectMake(0, 0, 0, 0)];
+	if (self) {
+		numberOfStars = _numberOfStars;
+		[self setupView];
+	}
+	return self;
+}
+
+- (id)initWithFrame:(CGRect)frame andStars:(int)_numberOfStars {
+	
 }
 
 - (int)indexForPoint:(CGPoint)point inView:(UIView*)view {
@@ -45,8 +64,20 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	CGPoint point = [[touches anyObject] locationInView:self];
 	int idx = [self indexForPoint:point inView:[self subViewWithTag:0]];
-	UIButton *b = (UIButton*)[self subViewWithTag:idx];
-	b.highlighted = !b.highlighted;
+	
+	UIButton *pressedButton = (UIButton*)[self subViewWithTag:idx];
+	if (pressedButton.highlighted) {
+		for (int i=numberOfStars; i >= idx; --i) {
+			UIButton *b = (UIButton*)[self subViewWithTag:i];
+			b.highlighted = NO;
+		}
+		
+	} else {
+		for (int i=0; i <= idx; i++) {
+			UIButton *b = (UIButton*)[self subViewWithTag:i];
+			b.highlighted = YES;
+		}
+	}
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -74,13 +105,10 @@
 	[super touchesCancelled:touches withEvent:event];
 }
 
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-	return self;
-}
-
 - (void)dealloc {
-    self.stars = nil;
-    [super dealloc];
+	self.star = nil;
+	self.highlightedStar = nil;
+	[super dealloc];
 }
 
 @end

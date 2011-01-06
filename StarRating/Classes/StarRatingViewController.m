@@ -7,6 +7,7 @@
 //
 
 #import "StarRatingViewController.h"
+#import "StarRatingView.h"
 
 @implementation StarRatingViewController
 
@@ -29,12 +30,14 @@
 */
 
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	/*StarRatingView *customNumberOfStars = [[StarRatingView alloc] initWithStars:3];
+	customNumberOfStars.backgroundColor = [UIColor blueColor];
+	[self.view addSubview:customNumberOfStars];*/
 }
-*/
 
 
 /*

@@ -13,4 +13,6 @@
 
 }
 
+- (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)index;
+
 @end

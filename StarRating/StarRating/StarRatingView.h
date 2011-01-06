@@ -8,12 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+#define kDefaultNumberOfStars 5
+
 
 @interface StarRatingView : UIView {
-    NSArray *stars;    
+	int numberOfStars;
 	int currentIdx;
+	UIImage *star;
+	UIImage *highlightedStar;
 }
 
-@property(retain,nonatomic) NSArray *stars;
+- (id)initWithFrame:(CGRect)frame;
+- (id)initWithStars:(int)_numberOfStars;
+- (id)initWithFrame:(CGRect)frame andStars:(int)_numberOfStars;
+
+@property (retain,nonatomic) UIImage *star;
+@property (retain,nonatomic) UIImage *highlightedStar;
 
 @end
