@@ -34,19 +34,19 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	/*StarRatingView *customNumberOfStars = [[StarRatingView alloc] initWithStars:3];
+	StarRatingView *customNumberOfStars = [[StarRatingView alloc] initWithFrame:CGRectMake(0, 0, 150, 100) andStars:3];
 	customNumberOfStars.backgroundColor = [UIColor blueColor];
-	[self.view addSubview:customNumberOfStars];*/
+	[self.view addSubview:customNumberOfStars];
 }
 
 
-/*
+
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
-*/
+
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

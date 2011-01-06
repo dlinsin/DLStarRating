@@ -32,7 +32,7 @@
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="IBUIView" id="615322927">
 						<reference key="NSNextResponder" ref="774585933"/>
-						<int key="NSvFlags">274</int>
+						<int key="NSvFlags">-2147483374</int>
 						<string key="NSFrameSize">{320, 55}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<object class="NSColor" key="IBUIBackgroundColor">

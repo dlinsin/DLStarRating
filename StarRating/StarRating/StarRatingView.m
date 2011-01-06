@@ -15,7 +15,11 @@
 
 @synthesize star, highlightedStar;
 
+#pragma mark -
+#pragma mark Initialization
+
 - (void)setupView {
+	self.clipsToBounds = YES;
 	currentIdx = 0;
 	star = [[UIImage imageNamed:@"star.png"] retain];
 	highlightedStar = [[UIImage imageNamed:@"star_highlighted"] retain];        
@@ -44,8 +48,8 @@
 	return self;
 }
 
-- (id)initWithStars:(int)_numberOfStars {
-	self = [super initWithFrame:CGRectMake(0, 0, 0, 0)];
+- (id)initWithFrame:(CGRect)frame andStars:(int)_numberOfStars {
+	self = [super initWithFrame:frame];
 	if (self) {
 		numberOfStars = _numberOfStars;
 		[self setupView];
@@ -53,9 +57,12 @@
 	return self;
 }
 
-- (id)initWithFrame:(CGRect)frame andStars:(int)_numberOfStars {
-	
+- (void)layoutSubviews {
+	// TODO center
 }
+
+#pragma mark -
+#pragma mark Touch Handling
 
 - (int)indexForPoint:(CGPoint)point inView:(UIView*)view {
 	return abs(point.x / view.frame.size.width);
@@ -104,6 +111,9 @@
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
 	[super touchesCancelled:touches withEvent:event];
 }
+
+#pragma mark -
+#pragma mark Memory Management
 
 - (void)dealloc {
 	self.star = nil;

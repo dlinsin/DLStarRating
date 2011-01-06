@@ -19,7 +19,6 @@
 }
 
 - (id)initWithFrame:(CGRect)frame;
-- (id)initWithStars:(int)_numberOfStars;
 - (id)initWithFrame:(CGRect)frame andStars:(int)_numberOfStars;
 
 @property (retain,nonatomic) UIImage *star;
