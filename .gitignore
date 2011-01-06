@@ -1,0 +1,4 @@
+StarRating/build/*
+*.pbxuser
+*.perspective*
+*.iws
