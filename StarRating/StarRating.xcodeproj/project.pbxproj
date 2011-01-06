@@ -26,6 +26,7 @@
 		B661FBA312D4A32B00E16620 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = B661FBA012D4A32B00E16620 /* star.png */; };
 		B661FBA412D4A32B00E16620 /* star_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = B661FBA112D4A32B00E16620 /* star_highlighted.png */; };
 		B661FBA512D4A32B00E16620 /* star_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = B661FBA112D4A32B00E16620 /* star_highlighted.png */; };
+		B682C57512D60EEA00460B9C /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = B682C57412D60EEA00460B9C /* UIView+Subviews.m */; };
 		B68E20E112D3AE3800AAF7B2 /* StarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B68E20E012D3AE3800AAF7B2 /* StarRatingView.m */; };
 		B68E20E212D3AE3800AAF7B2 /* StarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B68E20E012D3AE3800AAF7B2 /* StarRatingView.m */; };
 		B68E20F012D3B5EE00AAF7B2 /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B68E20EF12D3B5EE00AAF7B2 /* StarView.m */; };
@@ -55,6 +56,8 @@
 		B6280A4312D3AD0C00F99F02 /* StarRatingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarRatingTests.m; sourceTree = "<group>"; };
 		B661FBA012D4A32B00E16620 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		B661FBA112D4A32B00E16620 /* star_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_highlighted.png; sourceTree = "<group>"; };
+		B682C57312D60EEA00460B9C /* UIView+Subviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Subviews.h"; sourceTree = "<group>"; };
+		B682C57412D60EEA00460B9C /* UIView+Subviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Subviews.m"; sourceTree = "<group>"; };
 		B68E20DF12D3AE3800AAF7B2 /* StarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StarRatingView.h; path = StarRating/StarRatingView.h; sourceTree = "<group>"; };
 		B68E20E012D3AE3800AAF7B2 /* StarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StarRatingView.m; path = StarRating/StarRatingView.m; sourceTree = "<group>"; };
 		B68E20EE12D3B5EE00AAF7B2 /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StarView.h; path = StarRating/StarView.h; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				B68E20EF12D3B5EE00AAF7B2 /* StarView.m */,
 				B68E20DF12D3AE3800AAF7B2 /* StarRatingView.h */,
 				B68E20E012D3AE3800AAF7B2 /* StarRatingView.m */,
+				B682C57312D60EEA00460B9C /* UIView+Subviews.h */,
+				B682C57412D60EEA00460B9C /* UIView+Subviews.m */,
 			);
 			name = StarRating;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				B6280A2F12D3AD0C00F99F02 /* StarRatingViewController.m in Sources */,
 				B68E20E112D3AE3800AAF7B2 /* StarRatingView.m in Sources */,
 				B68E20F012D3B5EE00AAF7B2 /* StarView.m in Sources */,
+				B682C57512D60EEA00460B9C /* UIView+Subviews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -353,6 +360,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -361,13 +370,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Don't Code Sign";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
