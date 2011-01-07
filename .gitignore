@@ -1,4 +1,3 @@
-StarRating/build/*
+DLStarRatingDemo/build/*
 *.pbxuser
 *.perspective*
-*.iws
