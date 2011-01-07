@@ -10,7 +10,7 @@
 
 #define kEdgeInsetBottom 20
 
-@interface StarView : UIButton {
+@interface DLStarView : UIButton {
 
 }
 

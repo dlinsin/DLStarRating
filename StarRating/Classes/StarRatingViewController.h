@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DLStarRatingControl.h"
 
-@interface StarRatingViewController : UIViewController {
 
+@interface StarRatingViewController : UIViewController<DLStarRatingDelegate> {
+	IBOutlet UILabel *stars;
 }
+
+@property (retain,nonatomic) UILabel *stars;
 
 @end

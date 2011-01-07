@@ -6,10 +6,10 @@
 //  Copyright 2011 furryfishApps.com. All rights reserved.
 //
 
-#import "StarView.h"
+#import "DLStarView.h"
 
 
-@implementation StarView
+@implementation DLStarView
 
 #pragma mark -
 #pragma mark Initialization

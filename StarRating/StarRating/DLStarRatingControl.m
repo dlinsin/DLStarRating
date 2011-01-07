@@ -6,14 +6,14 @@
 //  Copyright 2011 furryfishApps.com. All rights reserved.
 //
 
-#import "StarRatingView.h"
-#import "StarView.h"
+#import "DLStarRatingControl.h"
+#import "DLStarView.h"
 #import "UIView+Subviews.h"
 
 
-@implementation StarRatingView
+@implementation DLStarRatingControl
 
-@synthesize star, highlightedStar;
+@synthesize star, highlightedStar, delegate;
 
 #pragma mark -
 #pragma mark Initialization
@@ -24,7 +24,7 @@
 	star = [[UIImage imageNamed:@"star.png"] retain];
 	highlightedStar = [[UIImage imageNamed:@"star_highlighted"] retain];        
 	for (int i=0; i<numberOfStars; i++) {
-		StarView *v = [[StarView alloc] initWithDefault:self.star highlighted:self.highlightedStar position:i];
+		DLStarView *v = [[DLStarView alloc] initWithDefault:self.star highlighted:self.highlightedStar position:i];
 		[self addSubview:v];
 		[v release];
 	}
@@ -59,7 +59,7 @@
 
 - (void)layoutSubviews {
 	for (int i=0; i < numberOfStars; i++) {
-		[(StarView*)[self subViewWithTag:i] centerIn:self.frame with:numberOfStars];
+		[(DLStarView*)[self subViewWithTag:i] centerIn:self.frame with:numberOfStars];
 	}
 }
 
@@ -89,21 +89,27 @@
 	}
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-	CGPoint point = [[touches anyObject] locationInView:self];	
+- (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
+	CGPoint point = [touch locationInView:self];	
 	UIButton *pressedButton = [self starForPoint:point];
 	if (pressedButton) {
 		int idx = pressedButton.tag;
 		if (pressedButton.highlighted) {
-			[self disableStarsDownTo:idx];			
+			[self disableStarsDownTo:idx];
 		} else {
 			[self enableStarsUpTo:idx];
 		}		
+		currentIdx = idx;
 	} 
+	return YES;		
 }
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-	CGPoint point = [[touches anyObject] locationInView:self];
+- (void)cancelTrackingWithEvent:(UIEvent *)event {
+	[super cancelTrackingWithEvent:event];
+}
+
+- (BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
+	CGPoint point = [touch locationInView:self];
 	
 	UIButton *pressedButton = [self starForPoint:point];
 	if (pressedButton) {
@@ -125,15 +131,25 @@
 		currentIdx = -1;
 		[self disableStarsDownTo:0];
 	}
-
+	return YES;
 }
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-	[super touchesEnded:touches withEvent:event];
+- (void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
+	[self.delegate newRating:self.rating];
+	[super endTrackingWithTouch:touch withEvent:event];
 }
 
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-	[super touchesCancelled:touches withEvent:event];
+#pragma mark -
+#pragma mark Rating Property
+
+- (void)setRating:(int)_rating {
+	[self disableStarsDownTo:0];
+	currentIdx = _rating-1;
+	[self enableStarsUpTo:currentIdx];
+}
+
+- (int)rating {
+	return currentIdx+1;
 }
 
 #pragma mark -
@@ -142,6 +158,7 @@
 - (void)dealloc {
 	self.star = nil;
 	self.highlightedStar = nil;
+	self.delegate = nil;
 	[super dealloc];
 }
 
