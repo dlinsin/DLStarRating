@@ -29,7 +29,6 @@
 }
 
 - (void)centerIn:(CGRect)_frame with:(int)numberOfStars {
-	CGPoint position = self.frame.origin;
 	CGSize size = self.frame.size;
 	
 	float height = self.frame.size.height;
@@ -40,7 +39,7 @@
 	float frameWidth = _frame.size.width;
 	float gapToApply = (frameWidth-widthOfStars)/2;
 	
-	self.frame = CGRectMake(position.x + gapToApply, newY, size.width, size.height);	
+	self.frame = CGRectMake((size.width*self.tag) + gapToApply, newY, size.width, size.height);	
 }
 
 @end

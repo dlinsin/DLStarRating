@@ -123,6 +123,7 @@
 	} else if (point.x < [self subViewWithTag:0].frame.origin.x) {
 		((UIButton*)[self subViewWithTag:0]).highlighted = NO;
 		currentIdx = -1;
+		[self disableStarsDownTo:0];
 	}
 
 }
