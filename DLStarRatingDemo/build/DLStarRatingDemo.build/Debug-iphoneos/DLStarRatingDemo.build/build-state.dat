@@ -1,0 +1,621 @@
+TDLStarRatingDemo
+v7
+r0
+t316100020.393894
+cCheck dependencies
+cCpResource build/Debug-iphoneos/DLStarRatingDemo.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/Info.plist DLStarRatingDemo-Info.plist
+cCompileXIB /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/MainWindow.xib
+cCompileXIB /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemoViewController.xib
+cCopyPNGFile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/star.png ../DLStarRating/images/star.png
+cCopyPNGFile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/star_highlighted.png ../DLStarRating/images/star_highlighted.png
+cProcessPCH /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch.gch DLStarRatingDemo_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch.gch DLStarRatingDemo_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/main.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemoAppDelegate.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemoViewController.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingControl.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarView.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/UIView+Subviews.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemo normal armv6
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/main.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemoAppDelegate.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemoViewController.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingControl.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarView.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/UIView+Subviews.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemo normal armv7
+cCreateUniversalBinary /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo normal "armv6 armv7"
+cGenerateDSYMFile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app.dSYM /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo
+cProcessProductPackaging "/Users/dlinsin/Library/MobileDevice/Provisioning Profiles/8980DE15-E386-42B7-9061-0D8CB520CC14.mobileprovision" /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/embedded.mobileprovision
+cTouch /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo.xcent
+cCodeSign /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004CC7DC9E0000000000000110
+t1288166558
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+c000000004CB3DFCF00000000000001A7
+t1286856655
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CB3DFCF00000000000001E5
+t1286856655
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC10EF500000000003532B0
+t1287720693
+s3486384
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC10F4700000000003E1F20
+t1287720775
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC10F1C0000000000001466
+t1287720732
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC11AE60000000000000AA1
+t1287723750
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC11B750000000000C769F0
+t1287723893
+s13068784
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRating/DLStarRatingControl.h
+c000000004D2713ED00000000000002AA
+t1294406637
+s682
+i<UIKit/UIKit.h>
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRating/DLStarView.h
+c000000004D2713F5000000000000014B
+t1294406645
+s331
+i<UIKit/UIKit.h>
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRating/UIView+Subviews.h
+c000000004D2713FD00000000000000B8
+t1294406653
+s184
+i<UIKit/UIKit.h>
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.h
+c000000004D2713ED00000000000002AA
+t1294406637
+s682
+i<UIKit/UIKit.h>
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m
+c000000004D2713F10000000000000EB1
+t1294406641
+s3761
+i"DLStarRatingControl.h"
+i"DLStarView.h"
+i"UIView+Subviews.h"
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m
+c000000004D2713F80000000000000586
+t1294406648
+s1414
+i"DLStarView.h"
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m
+c000000004D271400000000000000011F
+t1294406656
+s287
+i"UIView+Subviews.h"
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/images/star.png
+c000000004D19AF730000000000001ABD
+t1293528947
+s6845
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/images/star_highlighted.png
+c000000004D19AF730000000000001268
+t1293528947
+s4712
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.h
+c000000004D2713C100000000000001D9
+t1294406593
+s473
+i<UIKit/UIKit.h>
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m
+c000000004D2713C40000000000000A86
+t1294406596
+s2694
+i"DLStarRatingDemoAppDelegate.h"
+i"DLStarRatingDemoViewController.h"
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.h
+c000000004D27142B000000000000014A
+t1294406699
+s330
+i<UIKit/UIKit.h>
+i"DLStarRatingControl.h"
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m
+c000000004D27143D0000000000000506
+t1294406717
+s1286
+i"DLStarRatingDemoViewController.h"
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemoViewController.xib
+c000000004D271632000000000005BCBB
+t1294407218
+s375995
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemo_Prefix.pch
+c000000004D27137B00000000000000C9
+t1294406523
+s201
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/MainWindow.xib
+c000000004D27137B0000000000004E95
+t1294406523
+s20117
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo.xcent
+t1294407032
+s426
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingControl.o
+t1294407032
+s55632
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemo
+t1294407032
+s33520
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemo.LinkFileList
+c000000004D271577000000000000041D
+t1294407031
+s1053
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemoAppDelegate.o
+t1294407032
+s51012
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemoViewController.o
+t1294407032
+s43132
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarView.o
+t1294407032
+s41416
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/UIView+Subviews.o
+t1294407032
+s37068
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/main.o
+t1294407032
+s6504
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingControl.o
+t1294407032
+s55104
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemo
+t1294407032
+s33204
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemo.LinkFileList
+c000000004D271577000000000000041D
+t1294407031
+s1053
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemoAppDelegate.o
+t1294407032
+s50932
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemoViewController.o
+t1294407032
+s42980
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarView.o
+t1294407032
+s40720
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/UIView+Subviews.o
+t1294407032
+s37088
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/main.o
+t1294407032
+s6488
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app
+t1294407220
+s442
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app.dSYM
+t1294407032
+s102
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo
+t1294407032
+s84256
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemoViewController.nib
+t1294407220
+s1581
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/Info.plist
+t1294407031
+s817
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/MainWindow.nib
+t1294407031
+s1141
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/PkgInfo
+t1294407031
+s8
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/ResourceRules.plist
+t1294407031
+s485
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/embedded.mobileprovision
+t1294407032
+s9038
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/star.png
+t1294407031
+s4545
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/star_highlighted.png
+t1294407031
+s4845
+
+N/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m
+c000000004D27137B0000000000000173
+t1294406523
+s371
+i<UIKit/UIKit.h>
+
+N/Users/dlinsin/Library/MobileDevice/Provisioning Profiles/8980DE15-E386-42B7-9061-0D8CB520CC14.mobileprovision
+c000000004D25E30B000000000000234E
+t1294328587
+s9038
+
+N/var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch.gch
+t1294407032
+s10446552
+
+N/var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch.gch
+t1294407032
+s9983704
+
+NDLStarRatingDemo-Info.plist
+c000000004D2715750000000000000376
+t1294407029
+s886
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies316100019#316100019#0(0"0(0#1#0"8619688448#0"0#
+
+CCodeSign /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app
+s316100020.215600
+e316100020.393860
+r1
+xCodeSign
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app
+o/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app: replacing existing signature
+lSLF07#2@50"CodeSign build/Debug-iphoneos/DLStarRatingDemo.app316100020#316100020#0(139"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app: replacing existing signature0(0#0#108"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app8618505888#836"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: David Linsin (Z37SML22AM)" --resource-rules=/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/ResourceRules.plist --entitlements /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo.xcent /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingControl.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316099832.290599
+e316099832.412633
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingControl.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m316099832#316099832#0(0"0(0#0#104"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m8610139200#2289"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv6 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingControl.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemoAppDelegate.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316099832.214787
+e316099832.290498
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemoAppDelegate.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m316099832#316099832#0(0"0(0#0#104"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m8611134048#2297"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv6 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemoAppDelegate.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemoViewController.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316099832.265915
+e316099832.337790
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemoViewController.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@115"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m316099832#316099832#0(0"0(0#0#107"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m8610759008#2303"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv6 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemoViewController.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarView.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316099832.337883
+e316099832.510488
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarView.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@103"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m316099832#316099832#0(0"0(0#0#95"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m8607672960#2271"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv6 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarView.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/UIView+Subviews.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316099832.412727
+e316099832.520725
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/UIView+Subviews.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@108"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m316099832#316099832#0(0"0(0#0#100"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m8613703648#2281"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv6 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/UIView+Subviews.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/main.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316099832.213860
+e316099832.265819
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/main.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m316099832#316099832#0(0"0(0#0#73"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m8611643776#2243"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv6 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingControl.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316099832.636637
+e316099832.739426
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingControl.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m316099832#316099832#0(0"0(0#0#104"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m8606828832#2289"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv7 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarRatingControl.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingControl.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemoAppDelegate.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316099832.562917
+e316099832.636539
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemoAppDelegate.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m316099832#316099832#0(0"0(0#0#104"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m8609986848#2297"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv7 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoAppDelegate.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemoAppDelegate.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemoViewController.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316099832.580355
+e316099832.656037
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemoViewController.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@115"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m316099832#316099832#0(0"0(0#0#107"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m8607489440#2303"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv7 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/Classes/DLStarRatingDemoViewController.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemoViewController.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarView.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316099832.656131
+e316099832.722361
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarView.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@103"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m316099832#316099832#0(0"0(0#0#95"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m8605125568#2271"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv7 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/DLStarView.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarView.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/UIView+Subviews.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316099832.722550
+e316099832.776093
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/UIView+Subviews.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@108"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m316099832#316099832#0(0"0(0#0#100"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m8604207392#2281"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv7 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/UIView+Subviews.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/UIView+Subviews.o0#
+
+CCompileC build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/main.o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316099832.510583
+e316099832.562819
+r1
+xCompileC
+xbuild/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/main.o
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m316099832#316099832#0(0"0(0#0#73"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m8608611936#2243"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv7 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -include /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/main.m -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/main.o0#
+
+CCompileXIB /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemoViewController.xib
+s316100019.842167
+e316100020.211801
+r1
+xCompileXIB
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemoViewController.xib
+lSLF07#2@45"CompileXIB DLStarRatingDemoViewController.xib316100019#316100020#0(0"0(0#0#101"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemoViewController.xib8611676640#706"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemoViewController.nib /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemoViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCompileXIB /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/MainWindow.xib
+s316099831.221315
+e316099831.612632
+r1
+xCompileXIB
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib316099831#316099831#0(0"0(0#0#81"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/MainWindow.xib8605495552#666"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/MainWindow.nib /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
+
+CCopyPNGFile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/star.png ../DLStarRating/images/star.png
+s316099831.612715
+e316099831.660352
+r1
+xCopyPNGFile
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/star.png
+x../DLStarRating/images/star.png
+lSLF07#2@94"CopyPNGFile build/Debug-iphoneos/DLStarRatingDemo.app/star.png ../DLStarRating/images/star.png316099831#316099831#0(0"0(0#0#98"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/images/star.png8609950368#703"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/images/star.png /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/star.png0#
+
+CCopyPNGFile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/star_highlighted.png ../DLStarRating/images/star_highlighted.png
+s316099831.624000
+e316099831.672780
+r1
+xCopyPNGFile
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/star_highlighted.png
+x../DLStarRating/images/star_highlighted.png
+lSLF07#2@118"CopyPNGFile build/Debug-iphoneos/DLStarRatingDemo.app/star_highlighted.png ../DLStarRating/images/star_highlighted.png316099831#316099831#0(0"0(0#0#110"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/images/star_highlighted.png8608749504#727"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/../DLStarRating/images/star_highlighted.png /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/star_highlighted.png0#
+
+CCpResource build/Debug-iphoneos/DLStarRatingDemo.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+s316099831.213452
+e316099831.221250
+r1
+xCpResource
+xbuild/Debug-iphoneos/DLStarRatingDemo.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist316099831#316099831#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist8101813437696656384#590"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app0#
+
+CCreateUniversalBinary /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo normal "armv6 armv7"
+s316099832.805793
+e316099832.809076
+r1
+xCreateUniversalBinary
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo
+xnormal
+xarmv6 armv7
+lSLF07#2@101"CreateUniversalBinary build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo normal "armv6 armv7"316099832#316099832#0(0"0(0#0#78"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/armv6 armv78610951392#733"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /usr/bin/lipo -create /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemo /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemo -output /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo0#
+
+CGenerateDSYMFile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app.dSYM /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo
+s316099832.809137
+e316099832.845377
+r1
+xGenerateDSYMFile
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app.dSYM
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo
+lSLF07#2@122"GenerateDSYMFile build/Debug-iphoneos/DLStarRatingDemo.app.dSYM build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo316099832#316099832#0(0"0(0#0#125"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo8610261664#504"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/usr/bin/dsymutil /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/DLStarRatingDemo -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app.dSYM0#
+
+CLd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemo normal armv6
+s316099832.520821
+e316099832.580261
+r1
+xLd
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemo
+xnormal
+xarmv6
+lSLF07#2@176"Link /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemo316099832#316099832#0(0"0(0#0#0"8611782528#1084"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -filelist /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemo.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv6/DLStarRatingDemo0#
+
+CLd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemo normal armv7
+s316099832.776190
+e316099832.805705
+r1
+xLd
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemo
+xnormal
+xarmv7
+lSLF07#2@176"Link /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemo316099832#316099832#0(0"0(0#0#0"8593707232#1084"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -filelist /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemo.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/Objects-normal/armv7/DLStarRatingDemo0#
+
+CProcessInfoPlistFile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/Info.plist DLStarRatingDemo-Info.plist
+s316099831.215117
+e316099831.218003
+r1
+xProcessInfoPlistFile
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/Info.plist
+xDLStarRatingDemo-Info.plist
+lSLF07#2@35"Process DLStarRatingDemo-Info.plist316099831#316099831#0(0"0(0#0#94"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemo-Info.plist8610004512#741"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    builtin-infoPlistUtility DLStarRatingDemo-Info.plist -genpkginfo /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/ResourceRules.plist -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/Info.plist0#
+
+CProcessPCH /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch.gch DLStarRatingDemo_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s316099831.673678
+e316099832.202550
+r1
+xProcessPCH
+x/var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch.gch
+xDLStarRatingDemo_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@38"Precompile DLStarRatingDemo_Prefix.pch316099831#316099832#0(0"0(0#0#94"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemo_Prefix.pch8612086912#2104"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv7 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemo_Prefix.pch -o /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-cytxbyiqefjjzkdcavscxxyngbty/DLStarRatingDemo_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch.gch DLStarRatingDemo_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s316099831.672887
+e316099832.213762
+r1
+xProcessPCH
+x/var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch.gch
+xDLStarRatingDemo_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@38"Precompile DLStarRatingDemo_Prefix.pch316099831#316099832#0(0"0(0#0#94"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemo_Prefix.pch8614675328#2104"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-generated-files.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-own-target-headers.hmap -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-all-target-headers.hmap -iquote /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo-project-headers.hmap -F/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/include -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources/armv6 -I/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DerivedSources -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/DLStarRatingDemo_Prefix.pch -o /var/folders/es/esjjtBJbGpuBScb6PIXRRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DLStarRatingDemo_Prefix-ehhebzspnapcuohcudgmkjvihcrs/DLStarRatingDemo_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/dlinsin/Library/MobileDevice/Provisioning Profiles/8980DE15-E386-42B7-9061-0D8CB520CC14.mobileprovision" /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/embedded.mobileprovision
+s316099832.845472
+e316099832.846477
+r1
+xProcessProductPackaging
+x/Users/dlinsin/Library/MobileDevice/Provisioning Profiles/8980DE15-E386-42B7-9061-0D8CB520CC14.mobileprovision
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/embedded.mobileprovision
+lSLF07#2@203"ProcessProductPackaging "/Users/dlinsin/Library/MobileDevice/Provisioning Profiles/8980DE15-E386-42B7-9061-0D8CB520CC14.mobileprovision" build/Debug-iphoneos/DLStarRatingDemo.app/embedded.mobileprovision316099832#316099832#0(0"0(0#0#133"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/embedded.mobileprovision8614484032#521"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    <com.apple.tools.product-pkg-utility> "/Users/dlinsin/Library/MobileDevice/Provisioning Profiles/8980DE15-E386-42B7-9061-0D8CB520CC14.mobileprovision" -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo.xcent
+s316099832.849239
+e316099832.850990
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo.xcent
+lSLF07#2@202"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo.xcent316099832#316099832#0(0"0(0#0#156"/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo.xcent8611688160#546"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/DLStarRatingDemo.build/Debug-iphoneos/DLStarRatingDemo.build/DLStarRatingDemo.xcent0#
+
+CTouch /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app
+s316100020.213231
+e316100020.215484
+r1
+xTouch
+x/Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app
+lSLF07#2@114"Touch /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app316100020#316100020#0(0"0(0#0#0"8619275424#360"    cd /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin"    /usr/bin/touch -c /Users/dlinsin/Development/district9/DLStarRating/DLStarRatingDemo/build/Debug-iphoneos/DLStarRatingDemo.app0#
+
