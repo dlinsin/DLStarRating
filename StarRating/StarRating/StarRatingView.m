@@ -20,7 +20,7 @@
 
 - (void)setupView {
 	self.clipsToBounds = YES;
-	currentIdx = 0;
+	currentIdx = -1;
 	star = [[UIImage imageNamed:@"star.png"] retain];
 	highlightedStar = [[UIImage imageNamed:@"star_highlighted"] retain];        
 	for (int i=0; i<numberOfStars; i++) {
@@ -58,72 +58,73 @@
 }
 
 - (void)layoutSubviews {
-	
-	// horizontally
-	// calc width of all stars
-	// calc gaps 
-	// calc what to add to each star
-	// apply
-	
-	
-	// vertically
-	// calc height of star
-	// calc gaps
-	// calc what to add to each star
-	// apply
-	
-	/*for (int i=0; i < numberOfStars; i++) {
-		[(StarView*)[self subViewWithTag:i] centerVertical:self.frame];
-	}*/
-	/*for (int i=0; i < numberOfStars; i++) {
-		[(StarView*)[self subViewWithTag:i] centerHorizontal:self.frame :numberOfStars];
-	}*/
-	/*for (int i=0; i < numberOfStars; i++) {
+	for (int i=0; i < numberOfStars; i++) {
 		[(StarView*)[self subViewWithTag:i] centerIn:self.frame with:numberOfStars];
-	}*/
+	}
 }
 
 #pragma mark -
 #pragma mark Touch Handling
 
-- (int)indexForPoint:(CGPoint)point inView:(UIView*)view {
-	return abs(point.x / view.frame.size.width);
+- (UIButton*)starForPoint:(CGPoint)point {
+	for (int i=0; i < numberOfStars; i++) {
+		if (CGRectContainsPoint([self subViewWithTag:i].frame, point)) {
+			return (UIButton*)[self subViewWithTag:i];
+		}
+	}	
+	return nil;
+}
+
+- (void)disableStarsDownTo:(int)idx {
+	for (int i=numberOfStars; i > idx; --i) {
+		UIButton *b = (UIButton*)[self subViewWithTag:i];
+		b.highlighted = NO;
+	}
+}
+
+- (void)enableStarsUpTo:(int)idx {
+	for (int i=0; i <= idx; i++) {
+		UIButton *b = (UIButton*)[self subViewWithTag:i];
+		b.highlighted = YES;
+	}
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-	CGPoint point = [[touches anyObject] locationInView:self];
-	int idx = [self indexForPoint:point inView:[self subViewWithTag:0]];
-	
-	UIButton *pressedButton = (UIButton*)[self subViewWithTag:idx];
-	if (pressedButton.highlighted) {
-		for (int i=numberOfStars; i > idx; --i) {
-			UIButton *b = (UIButton*)[self subViewWithTag:i];
-			b.highlighted = NO;
-		}
-		
-	} else {
-		for (int i=0; i <= idx; i++) {
-			UIButton *b = (UIButton*)[self subViewWithTag:i];
-			b.highlighted = YES;
-		}
-	}
+	CGPoint point = [[touches anyObject] locationInView:self];	
+	UIButton *pressedButton = [self starForPoint:point];
+	if (pressedButton) {
+		int idx = pressedButton.tag;
+		if (pressedButton.highlighted) {
+			[self disableStarsDownTo:idx];			
+		} else {
+			[self enableStarsUpTo:idx];
+		}		
+	} 
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 	CGPoint point = [[touches anyObject] locationInView:self];
-	int idx = [self indexForPoint:point inView:[self subViewWithTag:0]];
 	
-	UIButton *button = (UIButton*)[self subViewWithTag:idx];
-	UIButton *currentButton = (UIButton*)[self subViewWithTag:currentIdx];
-	
-	if (idx < currentIdx) {
-		currentButton.highlighted = NO;
-		currentIdx = idx;
-	} else if (idx > currentIdx) {
-		currentButton.highlighted = YES;
-		button.highlighted = YES;
-		currentIdx = idx;
+	UIButton *pressedButton = [self starForPoint:point];
+	if (pressedButton) {
+		int idx = pressedButton.tag;
+		UIButton *currentButton = (UIButton*)[self subViewWithTag:currentIdx];
+		
+		if (idx < currentIdx) {
+			currentButton.highlighted = NO;
+			currentIdx = idx;
+			[self disableStarsDownTo:idx];
+		} else if (idx > currentIdx) {
+			currentButton.highlighted = YES;
+			pressedButton.highlighted = YES;
+			currentIdx = idx;
+			[self enableStarsUpTo:idx];
+		}
+	} else if (point.x < [self subViewWithTag:0].frame.origin.x) {
+		((UIButton*)[self subViewWithTag:0]).highlighted = NO;
+		currentIdx = -1;
 	}
+
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
