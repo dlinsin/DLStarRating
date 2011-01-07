@@ -11,6 +11,9 @@
 
 @implementation StarView
 
+#pragma mark -
+#pragma mark Initialization
+
 - (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)index {
 	self = [super initWithFrame:CGRectMake(((star.size.width/2)*index), 0, star.size.width/2, (star.size.height/2)+kEdgeInsetBottom)];
 	if (self) {
@@ -24,9 +27,15 @@
 	return self;
 }
 
+#pragma mark -
+#pragma mark UIView methods
+
 - (UIView*)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
 	return self.superview;
 }
+
+#pragma mark -
+#pragma mark Layouting
 
 - (void)centerIn:(CGRect)_frame with:(int)numberOfStars {
 	CGSize size = self.frame.size;
