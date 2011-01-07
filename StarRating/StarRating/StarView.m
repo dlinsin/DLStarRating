@@ -27,4 +27,41 @@
 	return self.superview;
 }
 
+- (void)centerVertical:(CGRect)_frame {
+	CGPoint position = self.frame.origin;
+	CGSize size = self.frame.size;
+	
+	float height = self.frame.size.height;
+	float frameHeight = _frame.size.height;
+	float gapToApply = (frameHeight-height)/2;
+	
+	self.frame = CGRectMake(position.x, gapToApply, size.width, size.height);
+}
+
+- (void)centerHorizontal:(CGRect)_frame :(int)numberOfStars {
+	CGPoint position = self.frame.origin;
+	CGSize size = self.frame.size;
+	
+	float widthOfStars = self.frame.size.width * numberOfStars;
+	float frameWidth = _frame.size.width;
+	float gapToApply = (frameWidth-widthOfStars)/2;
+	
+	self.frame = CGRectMake(position.x + gapToApply, position.y, size.width, size.height);
+}
+
+- (void)centerIn:(CGRect)_frame with:(int)numberOfStars {
+	CGPoint position = self.frame.origin;
+	CGSize size = self.frame.size;
+	
+	float height = self.frame.size.height;
+	float frameHeight = _frame.size.height;
+	float newY = (frameHeight-height)/2;
+	
+	float widthOfStars = self.frame.size.width * numberOfStars;
+	float frameWidth = _frame.size.width;
+	float gapToApply = (frameWidth-widthOfStars)/2;
+	
+	self.frame = CGRectMake(position.x + gapToApply, newY, size.width, size.height);	
+}
+
 @end

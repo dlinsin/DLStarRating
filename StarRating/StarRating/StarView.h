@@ -14,5 +14,8 @@
 }
 
 - (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)index;
+- (void)centerVertical:(CGRect)_frame;
+- (void)centerHorizontal:(CGRect)_frame :(int)numberOfStars;
+- (void)centerIn:(CGRect)_frame with:(int)numberOfStars;
 
 @end

@@ -58,7 +58,29 @@
 }
 
 - (void)layoutSubviews {
-	// TODO center
+	
+	// horizontally
+	// calc width of all stars
+	// calc gaps 
+	// calc what to add to each star
+	// apply
+	
+	
+	// vertically
+	// calc height of star
+	// calc gaps
+	// calc what to add to each star
+	// apply
+	
+	/*for (int i=0; i < numberOfStars; i++) {
+		[(StarView*)[self subViewWithTag:i] centerVertical:self.frame];
+	}*/
+	/*for (int i=0; i < numberOfStars; i++) {
+		[(StarView*)[self subViewWithTag:i] centerHorizontal:self.frame :numberOfStars];
+	}*/
+	/*for (int i=0; i < numberOfStars; i++) {
+		[(StarView*)[self subViewWithTag:i] centerIn:self.frame with:numberOfStars];
+	}*/
 }
 
 #pragma mark -
@@ -74,7 +96,7 @@
 	
 	UIButton *pressedButton = (UIButton*)[self subViewWithTag:idx];
 	if (pressedButton.highlighted) {
-		for (int i=numberOfStars; i >= idx; --i) {
+		for (int i=numberOfStars; i > idx; --i) {
 			UIButton *b = (UIButton*)[self subViewWithTag:i];
 			b.highlighted = NO;
 		}
