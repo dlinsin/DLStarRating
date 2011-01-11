@@ -74,12 +74,20 @@
 	return nil;
 }
 
-- (void)disableStarsDownTo:(int)idx {
+- (void)disableStarsDownToExclusive:(int)idx {
 	for (int i=numberOfStars; i > idx; --i) {
 		UIButton *b = (UIButton*)[self subViewWithTag:i];
 		b.highlighted = NO;
 	}
 }
+
+- (void)disableStarsDownTo:(int)idx {
+	for (int i=numberOfStars; i >= idx; --i) {
+		UIButton *b = (UIButton*)[self subViewWithTag:i];
+		b.highlighted = NO;
+	}
+}
+
 
 - (void)enableStarsUpTo:(int)idx {
 	for (int i=0; i <= idx; i++) {
@@ -94,7 +102,7 @@
 	if (pressedButton) {
 		int idx = pressedButton.tag;
 		if (pressedButton.highlighted) {
-			[self disableStarsDownTo:idx];
+			[self disableStarsDownToExclusive:idx];
 		} else {
 			[self enableStarsUpTo:idx];
 		}		
@@ -118,7 +126,7 @@
 		if (idx < currentIdx) {
 			currentButton.highlighted = NO;
 			currentIdx = idx;
-			[self disableStarsDownTo:idx];
+			[self disableStarsDownToExclusive:idx];
 		} else if (idx > currentIdx) {
 			currentButton.highlighted = YES;
 			pressedButton.highlighted = YES;
@@ -128,7 +136,7 @@
 	} else if (point.x < [self subViewWithTag:0].frame.origin.x) {
 		((UIButton*)[self subViewWithTag:0]).highlighted = NO;
 		currentIdx = -1;
-		[self disableStarsDownTo:0];
+		[self disableStarsDownToExclusive:0];
 	}
 	return YES;
 }
