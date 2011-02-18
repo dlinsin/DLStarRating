@@ -14,7 +14,7 @@
 #pragma mark Initialization
 
 - (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)index {
-	self = [super initWithFrame:CGRectMake(((star.size.width/2)*index), 0, star.size.width/2, (star.size.height/2)+kEdgeInsetBottom)];
+	self = [super initWithFrame:CGRectMake((star.size.width*index), 0, star.size.width, star.size.height+kEdgeInsetBottom)];
 	if (self) {
 		[self setImage:star forState:UIControlStateNormal];
 		[self setImage:highlightedStar forState:UIControlStateSelected];

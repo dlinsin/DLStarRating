@@ -15,6 +15,8 @@
 		2899E5220DE3E06400AC0155 /* DLStarRatingDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* DLStarRatingDemoViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* DLStarRatingDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* DLStarRatingDemoViewController.m */; };
+		B6910FFC130E816600105663 /* star_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6910FFA130E816600105663 /* star_highlighted@2x.png */; };
+		B6910FFD130E816600105663 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6910FFB130E816600105663 /* star@2x.png */; };
 		B6E998D212D74B0F00141730 /* DLStarRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E998CA12D74B0F00141730 /* DLStarRatingControl.m */; };
 		B6E998D312D74B0F00141730 /* DLStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E998CC12D74B0F00141730 /* DLStarView.m */; };
 		B6E998D412D74B0F00141730 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = B6E998CE12D74B0F00141730 /* star.png */; };
@@ -36,6 +38,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* DLStarRatingDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLStarRatingDemo_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* DLStarRatingDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DLStarRatingDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B6910FFA130E816600105663 /* star_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_highlighted@2x.png"; sourceTree = "<group>"; };
+		B6910FFB130E816600105663 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
 		B6E998C912D74B0F00141730 /* DLStarRatingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLStarRatingControl.h; sourceTree = "<group>"; };
 		B6E998CA12D74B0F00141730 /* DLStarRatingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLStarRatingControl.m; sourceTree = "<group>"; };
 		B6E998CB12D74B0F00141730 /* DLStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLStarView.h; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 		B6E998CD12D74B0F00141730 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B6910FFA130E816600105663 /* star_highlighted@2x.png */,
+				B6910FFB130E816600105663 /* star@2x.png */,
 				B6E998CE12D74B0F00141730 /* star.png */,
 				B6E998CF12D74B0F00141730 /* star_highlighted.png */,
 			);
@@ -201,6 +207,8 @@
 				2899E5220DE3E06400AC0155 /* DLStarRatingDemoViewController.xib in Resources */,
 				B6E998D412D74B0F00141730 /* star.png in Resources */,
 				B6E998D512D74B0F00141730 /* star_highlighted.png in Resources */,
+				B6910FFC130E816600105663 /* star_highlighted@2x.png in Resources */,
+				B6910FFD130E816600105663 /* star@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
