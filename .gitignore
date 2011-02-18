@@ -1,3 +1,5 @@
 DLStarRatingDemo/build/*
 *.pbxuser
 *.perspective*
+*.xcworkspace
+*xcuserdata
