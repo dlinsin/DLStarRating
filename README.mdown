@@ -17,9 +17,11 @@ If you'd like to instantiate it yourself with a custom number of stars use:
 You can set a default value by setting `ratingControl.rating=2` and hook up a `DLStarRatingDelegate` to get notified when the user has
 changed the rating. 
 
-To customize the stars, simply replace `star.png` and `star_highlighted.png` under images.
+To customize the stars, simply replace `star.png`/`star@2x.png` and `star_highlighted.png`/`star_highlighted@2x.png` under images.
 
-`DLStarRating` works with iOS 3.0+, but it has not been tested yet.
+DLStarView.h lets you customize the area below the stars, detecting touches. Simply change the value of kEdgeInsetBottom to increase the area or make it smaller, in case you have other user interface components below. The default is 20px, which allows to select/deselect the stars, while still being able to see them above your finger.
+
+`DLStarRating` should work with iOS 3.0+, but it has not been tested yet.
 
 
 ## Demo
