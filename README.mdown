@@ -2,7 +2,7 @@
 
 A `UIControl` subclass that behaves similarly as the App Store rating control.
 
-Written by [David Linsin](http://dlinsin.blogspot.com), January 2011.
+Written by [David Linsin](http://dlinsin.github.com), January 2011.
 
 
 ## Usage
