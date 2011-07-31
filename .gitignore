@@ -3,3 +3,4 @@ DLStarRatingDemo/build/*
 *.perspective*
 *.xcworkspace
 *xcuserdata
+.DS_Store
