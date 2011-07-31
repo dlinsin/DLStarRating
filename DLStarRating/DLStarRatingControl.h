@@ -22,7 +22,7 @@
 	int currentIdx;
 	UIImage *star;
 	UIImage *highlightedStar;
-	id<DLStarRatingDelegate> delegate;
+	IBOutlet id<DLStarRatingDelegate> delegate;
 }
 
 - (id)initWithFrame:(CGRect)frame;
