@@ -4,3 +4,4 @@ DLStarRatingDemo/build/*
 *.xcworkspace
 *xcuserdata
 .DS_Store
+DLStarRatingDemo/.idea/*

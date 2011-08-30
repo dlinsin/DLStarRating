@@ -33,9 +33,9 @@ You can open the `DLStarRating` demo project in XCode and run it on your iPhone 
 
 ## Issues and Feature Requests
 
-DLStarRating is only used in ["I think I spider"](http://ithinkispider.com) so far. Please report issues via GitHub's issue tracker.
+Please report issues via GitHub's issue tracker.
 
 
 ## License
 
-Licensed under the Apache 2.0 license. You can use the code in your commercial and non-commercial projects.
+DLStarRating is licensed under the GNU Lesser General Public License. 
