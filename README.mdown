@@ -38,4 +38,4 @@ Please report issues via GitHub's issue tracker.
 
 ## License
 
-DLStarRating is licensed under the GNU Lesser General Public License. 
+DLStarRating is licensed under the Eclipse Public License. 
