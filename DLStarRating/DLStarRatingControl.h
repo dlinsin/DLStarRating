@@ -14,13 +14,7 @@
 
 #define kDefaultNumberOfStars 5
 
-@protocol DLStarRatingDelegate
-
-- (void)newRating:(int)rating;
-
-@end
-
-
+@protocol DLStarRatingDelegate;
 
 @interface DLStarRatingControl : UIControl {
 	int numberOfStars;
@@ -31,11 +25,17 @@
 }
 
 - (id)initWithFrame:(CGRect)frame;
-- (id)initWithFrame:(CGRect)frame andStars:(int)_numberOfStars;
+- (id)initWithFrame:(CGRect)frame andStars:(NSUInteger)_numberOfStars;
 
 @property (retain,nonatomic) UIImage *star;
 @property (retain,nonatomic) UIImage *highlightedStar;
-@property (nonatomic) int rating;
+@property (nonatomic) NSUInteger rating;
 @property (retain,nonatomic) id<DLStarRatingDelegate> delegate;
+
+@end
+
+@protocol DLStarRatingDelegate
+
+- (void)newRating:(DLStarRatingControl *)control: (NSUInteger)rating;
 
 @end

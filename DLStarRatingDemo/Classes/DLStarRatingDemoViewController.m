@@ -36,7 +36,7 @@
 #pragma mark -
 #pragma mark Delegate implementation of NIB instatiated DLStarRatingControl
 
--(void)newRating:(int)rating {
+-(void)newRating:(DLStarRatingControl *)control :(NSUInteger)rating {
 	self.stars.text = [NSString stringWithFormat:@"%d star rating",rating];
 }
 

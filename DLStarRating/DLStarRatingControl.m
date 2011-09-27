@@ -52,7 +52,7 @@
 	return self;
 }
 
-- (id)initWithFrame:(CGRect)frame andStars:(int)_numberOfStars {
+- (id)initWithFrame:(CGRect)frame andStars:(NSUInteger)_numberOfStars {
 	self = [super initWithFrame:frame];
 	if (self) {
 		numberOfStars = _numberOfStars;
@@ -147,21 +147,21 @@
 }
 
 - (void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
-	[self.delegate newRating:self.rating];
+	[self.delegate newRating:self :self.rating];
 	[super endTrackingWithTouch:touch withEvent:event];
 }
 
 #pragma mark -
 #pragma mark Rating Property
 
-- (void)setRating:(int)_rating {
+- (void)setRating:(NSUInteger)_rating {
 	[self disableStarsDownTo:0];
 	currentIdx = _rating-1;
 	[self enableStarsUpTo:currentIdx];
 }
 
-- (int)rating {
-	return currentIdx+1;
+- (NSUInteger)rating {
+	return (NSUInteger)currentIdx+1;
 }
 
 #pragma mark -
