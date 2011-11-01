@@ -26,7 +26,6 @@
 	customNumberOfStars.autoresizingMask =  UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
 	customNumberOfStars.rating = 2;
 	[self.view addSubview:customNumberOfStars];
-    [customNumberOfStars release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -38,15 +37,6 @@
 
 -(void)newRating:(DLStarRatingControl *)control :(NSUInteger)rating {
 	self.stars.text = [NSString stringWithFormat:@"%d star rating",rating];
-}
-
-
-#pragma mark -
-#pragma mark Memory Management
-
-- (void)dealloc {
-	self.stars = nil;
-	[super dealloc];
 }
 
 @end
