@@ -35,6 +35,9 @@ You can open the `DLStarRating` demo project in XCode and run it on your iPhone 
 
 Please report issues via GitHub's issue tracker.
 
+## ARC
+
+There's an [ARC branch](https://github.com/dlinsin/DLStarRating/tree/4_ARC) which you can use if your App uses the latest&greatest. It'll sooner or later find it's way into master.
 
 ## License
 
