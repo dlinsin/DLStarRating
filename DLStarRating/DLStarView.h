@@ -12,13 +12,14 @@
 
 #import <UIKit/UIKit.h>
 
-#define kEdgeInsetBottom 20
+#define kEdgeInsetBottom 10
+#define kTagOffset 18000
 
 @interface DLStarView : UIButton {
 
 }
 
-- (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)index;
+- (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)inIndex;
 - (void)centerIn:(CGRect)_frame with:(int)numberOfStars;
 
 @end

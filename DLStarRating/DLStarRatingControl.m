@@ -15,6 +15,7 @@
 #import "UIView+Subviews.h"
 
 
+
 @implementation DLStarRatingControl
 
 @synthesize star, highlightedStar, delegate;
@@ -26,7 +27,8 @@
 	self.clipsToBounds = YES;
 	currentIdx = -1;
 	star = [[UIImage imageNamed:@"star.png"] retain];
-	highlightedStar = [[UIImage imageNamed:@"star_highlighted.png"] retain];        
+	highlightedStar = [[UIImage imageNamed:@"star_highlighted.png"] retain];    
+    
 	for (int i=0; i<numberOfStars; i++) {
 		DLStarView *v = [[DLStarView alloc] initWithDefault:self.star highlighted:self.highlightedStar position:i];
 		[self addSubview:v];
@@ -63,7 +65,7 @@
 
 - (void)layoutSubviews {
 	for (int i=0; i < numberOfStars; i++) {
-		[(DLStarView*)[self subViewWithTag:i] centerIn:self.frame with:numberOfStars];
+		[(DLStarView*)[self subViewWithTag:i+kTagOffset] centerIn:self.frame with:numberOfStars];
 	}
 }
 
@@ -72,8 +74,8 @@
 
 - (UIButton*)starForPoint:(CGPoint)point {
 	for (int i=0; i < numberOfStars; i++) {
-		if (CGRectContainsPoint([self subViewWithTag:i].frame, point)) {
-			return (UIButton*)[self subViewWithTag:i];
+		if (CGRectContainsPoint([self subViewWithTag:i+kTagOffset].frame, point)) {
+			return (UIButton*)[self subViewWithTag:i+kTagOffset];
 		}
 	}	
 	return nil;
@@ -81,14 +83,14 @@
 
 - (void)disableStarsDownToExclusive:(int)idx {
 	for (int i=numberOfStars; i > idx; --i) {
-		UIButton *b = (UIButton*)[self subViewWithTag:i];
+		UIButton *b = (UIButton*)[self subViewWithTag:i+kTagOffset];
 		b.highlighted = NO;
 	}
 }
 
 - (void)disableStarsDownTo:(int)idx {
 	for (int i=numberOfStars; i >= idx; --i) {
-		UIButton *b = (UIButton*)[self subViewWithTag:i];
+		UIButton *b = (UIButton*)[self subViewWithTag:i+kTagOffset];
 		b.highlighted = NO;
 	}
 }
@@ -96,7 +98,7 @@
 
 - (void)enableStarsUpTo:(int)idx {
 	for (int i=0; i <= idx; i++) {
-		UIButton *b = (UIButton*)[self subViewWithTag:i];
+		UIButton *b = (UIButton*)[self subViewWithTag:i+kTagOffset];
 		b.highlighted = YES;
 	}
 }
@@ -105,7 +107,7 @@
 	CGPoint point = [touch locationInView:self];	
 	UIButton *pressedButton = [self starForPoint:point];
 	if (pressedButton) {
-		int idx = pressedButton.tag;
+		int idx = pressedButton.tag - kTagOffset;
 		if (pressedButton.highlighted) {
 			[self disableStarsDownToExclusive:idx];
 		} else {
@@ -125,7 +127,7 @@
 	
 	UIButton *pressedButton = [self starForPoint:point];
 	if (pressedButton) {
-		int idx = pressedButton.tag;
+		int idx = pressedButton.tag - kTagOffset;
 		UIButton *currentButton = (UIButton*)[self subViewWithTag:currentIdx];
 		
 		if (idx < currentIdx) {
@@ -138,8 +140,8 @@
 			currentIdx = idx;
 			[self enableStarsUpTo:idx];
 		}
-	} else if (point.x < [self subViewWithTag:0].frame.origin.x) {
-		((UIButton*)[self subViewWithTag:0]).highlighted = NO;
+	} else if (point.x < [self subViewWithTag:kTagOffset].frame.origin.x) {
+		((UIButton*)[self subViewWithTag:kTagOffset]).highlighted = NO;
 		currentIdx = -1;
 		[self disableStarsDownToExclusive:0];
 	}

@@ -18,15 +18,16 @@
 #pragma mark -
 #pragma mark Initialization
 
-- (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)index {
-	self = [super initWithFrame:CGRectMake((star.size.width*index), 0, star.size.width, star.size.height+kEdgeInsetBottom)];
+- (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)inIndex {
+	self = [super initWithFrame:CGRectMake((star.size.width*inIndex), 0, star.size.width, star.size.height+kEdgeInsetBottom)];
 	if (self) {
 		[self setImage:star forState:UIControlStateNormal];
 		[self setImage:highlightedStar forState:UIControlStateSelected];
 		[self setImage:highlightedStar forState:UIControlStateHighlighted];
-		[self setTag:index];
+		[self setTag:inIndex+kTagOffset];
 		[self setImageEdgeInsets:UIEdgeInsetsMake(0, 0, kEdgeInsetBottom, 0)];
 		[self setBackgroundColor:[UIColor clearColor]];
+        [self setContentMode:UIViewContentModeScaleToFill];
 	}
 	return self;
 }
@@ -44,15 +45,30 @@
 - (void)centerIn:(CGRect)_frame with:(int)numberOfStars {
 	CGSize size = self.frame.size;
 	
-	float height = self.frame.size.height;
+    
+    if (_frame.size.height < self.frame.size.height)
+    {
+        size.height = _frame.size.height;
+        size.width = _frame.size.height - kEdgeInsetBottom; //maintain aspect ratio of star
+    }
+    
+    if (size.width * numberOfStars > _frame.size.width)
+    {
+        size.width = _frame.size.width /numberOfStars;
+        size.height = size.width + kEdgeInsetBottom;
+    }
+    
+	float height = size.height;
 	float frameHeight = _frame.size.height;
+        
 	float newY = (frameHeight-height)/2;
 	
-	float widthOfStars = self.frame.size.width * numberOfStars;
+	float widthOfStars = size.width * numberOfStars;
 	float frameWidth = _frame.size.width;
 	float gapToApply = (frameWidth-widthOfStars)/2;
 	
-	self.frame = CGRectMake((size.width*self.tag) + gapToApply, newY, size.width, size.height);	
+    CGRect newRect = CGRectMake((size.width*(self.tag-kTagOffset)) + gapToApply, newY, size.width, size.height);
+	self.frame = newRect;	
 }
 
 @end
