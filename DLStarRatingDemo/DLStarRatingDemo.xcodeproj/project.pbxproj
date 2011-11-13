@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		2899E5220DE3E06400AC0155 /* DLStarRatingDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* DLStarRatingDemoViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* DLStarRatingDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* DLStarRatingDemoViewController.m */; };
+		7A59F61D147016F7005CC3C0 /* star_highlighted-darker.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A59F61B147016F7005CC3C0 /* star_highlighted-darker.png */; };
+		7A59F61E147016F7005CC3C0 /* star_highlighted-darker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A59F61C147016F7005CC3C0 /* star_highlighted-darker@2x.png */; };
 		B6910FFC130E816600105663 /* star_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6910FFA130E816600105663 /* star_highlighted@2x.png */; };
 		B6910FFD130E816600105663 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6910FFB130E816600105663 /* star@2x.png */; };
 		B6E998D212D74B0F00141730 /* DLStarRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E998CA12D74B0F00141730 /* DLStarRatingControl.m */; };
@@ -37,6 +39,8 @@
 		28D7ACF70DDB3853001CB0EB /* DLStarRatingDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLStarRatingDemoViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* DLStarRatingDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLStarRatingDemo_Prefix.pch; sourceTree = "<group>"; };
+		7A59F61B147016F7005CC3C0 /* star_highlighted-darker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_highlighted-darker.png"; sourceTree = "<group>"; };
+		7A59F61C147016F7005CC3C0 /* star_highlighted-darker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_highlighted-darker@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* DLStarRatingDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DLStarRatingDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		B6910FFA130E816600105663 /* star_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_highlighted@2x.png"; sourceTree = "<group>"; };
 		B6910FFB130E816600105663 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				B6910FFB130E816600105663 /* star@2x.png */,
 				B6E998CE12D74B0F00141730 /* star.png */,
 				B6E998CF12D74B0F00141730 /* star_highlighted.png */,
+				7A59F61B147016F7005CC3C0 /* star_highlighted-darker.png */,
+				7A59F61C147016F7005CC3C0 /* star_highlighted-darker@2x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -177,10 +183,11 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = furryfishApps.com;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DLStarRatingDemo" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -209,6 +216,8 @@
 				B6E998D512D74B0F00141730 /* star_highlighted.png in Resources */,
 				B6910FFC130E816600105663 /* star_highlighted@2x.png in Resources */,
 				B6910FFD130E816600105663 /* star@2x.png in Resources */,
+				7A59F61D147016F7005CC3C0 /* star_highlighted-darker.png in Resources */,
+				7A59F61E147016F7005CC3C0 /* star_highlighted-darker@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +278,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -284,7 +292,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Release;

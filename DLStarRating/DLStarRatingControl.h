@@ -26,6 +26,7 @@
 
 - (id)initWithFrame:(CGRect)frame;
 - (id)initWithFrame:(CGRect)frame andStars:(NSUInteger)_numberOfStars;
+- (void)setStar:(UIImage*)defaultStarImage highlightedStar:(UIImage*)highlightedStarImage atIndex:(int)index;
 
 @property (retain,nonatomic) UIImage *star;
 @property (retain,nonatomic) UIImage *highlightedStar;

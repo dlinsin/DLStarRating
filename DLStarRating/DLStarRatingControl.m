@@ -68,6 +68,22 @@
 }
 
 #pragma mark -
+#pragma mark Customization
+
+- (void)setStar:(UIImage*)defaultStarImage highlightedStar:(UIImage*)highlightedStarImage atIndex:(int)index {
+    DLStarView *selectedStar = (DLStarView*)[self subViewWithTag:index];
+    
+    // check if star exists
+    if (!selectedStar) return;
+    
+    // check images for nil else use default stars
+    defaultStarImage = (defaultStarImage) ? defaultStarImage : star;
+    highlightedStarImage = (highlightedStarImage) ? highlightedStarImage : highlightedStar;
+    
+    [selectedStar setStarImage:defaultStarImage highlightedStarImage:highlightedStarImage];
+}
+
+#pragma mark -
 #pragma mark Touch Handling
 
 - (UIButton*)starForPoint:(CGPoint)point {
@@ -75,7 +91,7 @@
 		if (CGRectContainsPoint([self subViewWithTag:i].frame, point)) {
 			return (UIButton*)[self subViewWithTag:i];
 		}
-	}	
+	}
 	return nil;
 }
 
