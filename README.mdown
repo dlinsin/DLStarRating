@@ -28,7 +28,7 @@ DLStarView.h lets you customize the area below the stars, detecting touches. Sim
 
 You can open the `DLStarRating` demo project in XCode and run it on your iPhone as well as in the Simulator. There's a DLStarRatingControl hooked up in `DLStarRatingDemo.xib`, as well as in `DLStarRatingDemoViewController`. It also shows how to set a rating value and use `DLStarRatingDelegate`.
 
-<img src="https://raw.github.com/martinjuhasz/DLStarRating/master/DLStarRating.png" width="320" height="480"/>
+<img src="http://cloud.github.com/downloads/dlinsin/DLStarRating/DLStarRating.png" width="320" height="480"/>
 
 
 ## Issues and Feature Requests
