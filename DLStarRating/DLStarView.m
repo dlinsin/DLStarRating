@@ -25,6 +25,11 @@
 		[self setTag:index];
 		[self setImageEdgeInsets:UIEdgeInsetsMake(0, 0, kEdgeInsetBottom, 0)];
 		[self setBackgroundColor:[UIColor clearColor]];
+        if (index == 0) {
+   	        [self setAccessibilityLabel:[NSString stringWithFormat:@"1 star", index]];   
+        } else {
+   	        [self setAccessibilityLabel:[NSString stringWithFormat:@"%d stars", index+1]];   
+        }
 	}
 	return self;
 }
