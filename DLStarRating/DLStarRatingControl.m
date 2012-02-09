@@ -195,16 +195,6 @@
 	return (NSUInteger)currentIdx+1;
 }
 
-#pragma mark - 
-#pragma mark ImageCropping
-
-- (UIImage *)croppedImage:(UIImage*)image toRect:(CGRect)rect {
-    CGImageRef resultImage = CGImageCreateWithImageInRect([image CGImage], rect);
-    UIImage *result = [UIImage imageWithCGImage:resultImage];
-    CGImageRelease(resultImage);
-    return result;
-}
-
 
 #pragma mark -
 #pragma mark Memory Management
