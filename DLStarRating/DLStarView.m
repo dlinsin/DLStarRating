@@ -1,28 +1,34 @@
 /*
-
-    DLStarRating
-    Copyright (C) 2011 David Linsin <dlinsin@gmail.com> 
-
-    All rights reserved. This program and the accompanying materials
-    are made available under the terms of the Eclipse Public License v1.0
-    which accompanies this distribution, and is available at
-    http://www.eclipse.org/legal/epl-v10.html
-
+ 
+ DLStarRating
+ Copyright (C) 2011 David Linsin <dlinsin@gmail.com> 
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ 
  */
 
 #import "DLStarView.h"
-
+#import "DLStarRatingControl.h"
 
 @implementation DLStarView
 
 #pragma mark -
 #pragma mark Initialization
 
-- (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)index {
-	self = [super initWithFrame:CGRectMake((star.size.width*index), 0, star.size.width, star.size.height+kEdgeInsetBottom)];
+- (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)index allowFractions:(BOOL)fractions {
+	self = [super initWithFrame:CGRectZero];
+    
 	if (self) {
+        [self setTag:index];
+        if (fractions) {
+            highlightedStar = [self croppedImage:highlightedStar];
+            star = [self croppedImage:star];
+        }
+        self.frame = CGRectMake((star.size.width*index), 0, star.size.width, star.size.height+kEdgeInsetBottom);
         [self setStarImage:star highlightedStarImage:highlightedStar];
-		[self setTag:index];
 		[self setImageEdgeInsets:UIEdgeInsetsMake(0, 0, kEdgeInsetBottom, 0)];
 		[self setBackgroundColor:[UIColor clearColor]];
         if (index == 0) {
@@ -33,6 +39,20 @@
 	}
 	return self;
 }
+
+
+- (UIImage *)croppedImage:(UIImage*)image {
+    float partWidth = image.size.width/kNumberOfFractions * image.scale;
+    int part = (self.tag+kNumberOfFractions)%kNumberOfFractions;
+    float xOffset = partWidth*part;
+    CGRect newFrame = CGRectMake(xOffset, 0, partWidth , image.size.height * image.scale);
+    CGImageRef resultImage = CGImageCreateWithImageInRect([image CGImage], newFrame);
+    UIImage *result = [UIImage imageWithCGImage:resultImage scale:image.scale orientation:image.imageOrientation];
+    CGImageRelease(resultImage);
+    return result;
+}
+
+
 
 #pragma mark -
 #pragma mark UIView methods
