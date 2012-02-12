@@ -11,10 +11,10 @@ You find all the sources include two sample images under `DLStarRating`. Add the
 
 If you'd like to instantiate it yourself with a custom number of stars use:
 
-	// setup a control with 3 stars at a size of 320x230
-	DLStarRatingControl *ratingControl = [[DLStarRatingControl alloc] initWithFrame:CGRectMake(0, 0, 320, 230) andStars:3];
+	// setup a control with 3 fractional stars at a size of 320x230
+	DLStarRatingControl *ratingControl = [[DLStarRatingControl alloc] initWithFrame:CGRectMake(0, 0, 320, 230) andStars:3 isFractional:YES];
 
-You can set a default value by setting `ratingControl.rating=2` and hook up a `DLStarRatingDelegate` to get notified when the user has
+You can set a default value by setting `ratingControl.rating=2.5` and hook up a `DLStarRatingDelegate` to get notified when the user has
 changed the rating. 
 
 To customize the stars, simply replace `star.png`/`star@2x.png` and `star_highlighted.png`/`star_highlighted@2x.png` under images.
