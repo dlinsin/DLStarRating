@@ -184,7 +184,7 @@
         _rating *=kNumberOfFractions;
     }
 	[self disableStarsDownTo:0];
-	currentIdx = _rating-1;
+	currentIdx = (int)_rating-1;
 	[self enableStarsUpTo:currentIdx];
 }
 
