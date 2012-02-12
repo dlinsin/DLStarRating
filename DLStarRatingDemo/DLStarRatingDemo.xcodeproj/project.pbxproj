@@ -250,7 +250,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DLStarRatingDemo_Prefix.pch;
 				INFOPLIST_FILE = "DLStarRatingDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = DLStarRatingDemo;
 			};
 			name = Debug;
@@ -263,7 +263,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DLStarRatingDemo_Prefix.pch;
 				INFOPLIST_FILE = "DLStarRatingDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = DLStarRatingDemo;
 				VALIDATE_PRODUCT = YES;
 			};
