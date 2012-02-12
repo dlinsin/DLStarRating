@@ -23,10 +23,11 @@
     [super viewDidLoad];
     
     // Custom Number of Stars
-	DLStarRatingControl *customNumberOfStars = [[DLStarRatingControl alloc] initWithFrame:CGRectMake(0, 154, 320, 153) andStars:3];
+	DLStarRatingControl *customNumberOfStars = [[DLStarRatingControl alloc] initWithFrame:CGRectMake(0, 154, 320, 153) andStars:5 isFractional:YES];
+    customNumberOfStars.delegate = self;
 	customNumberOfStars.backgroundColor = [UIColor groupTableViewBackgroundColor];
 	customNumberOfStars.autoresizingMask =  UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
-	customNumberOfStars.rating = 2;
+	customNumberOfStars.rating = 2.5;
 	[self.view addSubview:customNumberOfStars];
     [customNumberOfStars release];
     
@@ -53,8 +54,8 @@
 #pragma mark -
 #pragma mark Delegate implementation of NIB instatiated DLStarRatingControl
 
--(void)newRating:(DLStarRatingControl *)control :(NSUInteger)rating {
-	self.stars.text = [NSString stringWithFormat:@"%d star rating",rating];
+-(void)newRating:(DLStarRatingControl *)control :(float)rating {
+	self.stars.text = [NSString stringWithFormat:@"%0.1f star rating",rating];
 }
 
 

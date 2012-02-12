@@ -17,7 +17,7 @@
 
 @implementation DLStarRatingControl
 
-@synthesize star, highlightedStar, delegate;
+@synthesize star, highlightedStar, delegate, isFractionalRatingEnabled;
 
 #pragma mark -
 #pragma mark Initialization
@@ -25,10 +25,11 @@
 - (void)setupView {
 	self.clipsToBounds = YES;
 	currentIdx = -1;
-	star = [[UIImage imageNamed:@"star.png"] retain];
-	highlightedStar = [[UIImage imageNamed:@"star_highlighted.png"] retain];        
+	star = [[UIImage imageNamed:@"star.png"] retain];    
+	highlightedStar = [[UIImage imageNamed:@"star_highlighted.png"] retain];    
+
 	for (int i=0; i<numberOfStars; i++) {
-		DLStarView *v = [[DLStarView alloc] initWithDefault:self.star highlighted:self.highlightedStar position:i];
+		DLStarView *v = [[DLStarView alloc] initWithDefault:self.star highlighted:self.highlightedStar position:i allowFractions:isFractionalRatingEnabled];
 		[self addSubview:v];
 		[v release];
 	}
@@ -38,6 +39,8 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
 		numberOfStars = kDefaultNumberOfStars;
+        if (isFractionalRatingEnabled)
+            numberOfStars *=kNumberOfFractions;
 		[self setupView];
     }
     return self;
@@ -47,15 +50,21 @@
 	self = [super initWithFrame:frame];
 	if (self) {
 		numberOfStars = kDefaultNumberOfStars;
-		[self setupView];
+        if (isFractionalRatingEnabled)
+            numberOfStars *=kNumberOfFractions;
+        [self setupView];
+
 	}
 	return self;
 }
 
-- (id)initWithFrame:(CGRect)frame andStars:(NSUInteger)_numberOfStars {
+- (id)initWithFrame:(CGRect)frame andStars:(NSUInteger)_numberOfStars isFractional:(BOOL)isFract{
 	self = [super initWithFrame:frame];
 	if (self) {
+        isFractionalRatingEnabled = isFract;
 		numberOfStars = _numberOfStars;
+        if (isFractionalRatingEnabled)
+            numberOfStars *=kNumberOfFractions;
 		[self setupView];
 	}
 	return self;
@@ -170,15 +179,22 @@
 #pragma mark -
 #pragma mark Rating Property
 
-- (void)setRating:(NSUInteger)_rating {
+- (void)setRating:(float)_rating {
+    if (isFractionalRatingEnabled) {
+        _rating *=kNumberOfFractions;
+    }
 	[self disableStarsDownTo:0];
 	currentIdx = _rating-1;
 	[self enableStarsUpTo:currentIdx];
 }
 
-- (NSUInteger)rating {
+- (float)rating {
+    if (isFractionalRatingEnabled) {
+        return (float)(currentIdx+1)/kNumberOfFractions;
+    }
 	return (NSUInteger)currentIdx+1;
 }
+
 
 #pragma mark -
 #pragma mark Memory Management
