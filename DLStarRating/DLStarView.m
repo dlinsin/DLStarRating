@@ -65,17 +65,16 @@
 #pragma mark Layouting
 
 - (void)centerIn:(CGRect)_frame with:(int)numberOfStars {
-	CGSize size = self.frame.size;
-	
-	float height = self.frame.size.height;
-	float frameHeight = _frame.size.height;
-	float newY = (frameHeight-height)/2;
-	
-	float widthOfStars = self.frame.size.width * numberOfStars;
-	float frameWidth = _frame.size.width;
-	float gapToApply = (frameWidth-widthOfStars)/2;
-	
-	self.frame = CGRectMake((size.width*self.tag) + gapToApply, newY, size.width, size.height);	
+    CGSize size = self.frame.size;
+
+    float height = self.frame.size.height;
+    float frameHeight = _frame.size.height;
+    float newY = (frameHeight-height)/2;
+
+    float widthOfStarBox = _frame.size.width / numberOfStars;
+    float padding = (widthOfStarBox - self.frame.size.width) / 2.0;
+
+    self.frame = CGRectMake((widthOfStarBox*self.tag) + padding, newY, size.width, size.height+kEdgeInsetBottom);	
 }
 
 - (void)setStarImage:(UIImage*)starImage highlightedStarImage:(UIImage*)highlightedImage {
