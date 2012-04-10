@@ -17,7 +17,7 @@
 	IBOutlet UILabel *stars;
 }
 
-@property (retain,nonatomic) UILabel *stars;
+@property (strong,nonatomic) UILabel *stars;
 
 @end
 

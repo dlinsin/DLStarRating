@@ -21,16 +21,15 @@
 	int currentIdx;
 	UIImage *star;
 	UIImage *highlightedStar;
-	IBOutlet id<DLStarRatingDelegate> delegate;
 }
 
 - (id)initWithFrame:(CGRect)frame;
 - (id)initWithFrame:(CGRect)frame andStars:(NSUInteger)_numberOfStars;
 
-@property (retain,nonatomic) UIImage *star;
-@property (retain,nonatomic) UIImage *highlightedStar;
+@property (strong,nonatomic) UIImage *star;
+@property (strong,nonatomic) UIImage *highlightedStar;
 @property (nonatomic) NSUInteger rating;
-@property (retain,nonatomic) id<DLStarRatingDelegate> delegate;
+@property (assign,nonatomic) IBOutlet id<DLStarRatingDelegate> delegate;
 
 @end
 
