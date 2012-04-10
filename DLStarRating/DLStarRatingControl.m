@@ -26,14 +26,9 @@
 - (void)setupView {
 	self.clipsToBounds = YES;
 	currentIdx = -1;
-<<<<<<< HEAD
-	star = [[UIImage imageNamed:@"star.png"] retain];
-	highlightedStar = [[UIImage imageNamed:@"star_highlighted.png"] retain];    
-    
-=======
 	star = [UIImage imageNamed:@"star.png"];
 	highlightedStar = [UIImage imageNamed:@"star_highlighted.png"];        
->>>>>>> 4_ARC
+
 	for (int i=0; i<numberOfStars; i++) {
 		DLStarView *v = [[DLStarView alloc] initWithDefault:self.star highlighted:self.highlightedStar position:i];
 		[self addSubview:v];
