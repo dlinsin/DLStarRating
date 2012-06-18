@@ -33,7 +33,7 @@
 @property (retain,nonatomic) UIImage *star;
 @property (retain,nonatomic) UIImage *highlightedStar;
 @property (nonatomic) float rating;
-@property (retain,nonatomic) id<DLStarRatingDelegate> delegate;
+@property (assign,nonatomic) id<DLStarRatingDelegate> delegate;
 @property (nonatomic,assign) BOOL isFractionalRatingEnabled;
 
 @end
