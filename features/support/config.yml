@@ -1,0 +1,12 @@
+app: /Users/dlinsin/Library/Developer/Xcode/DerivedData/DLStarRatingDemo-aahohtoxsuetolfxbctgoiffdteh/Build/Products/Debug-iphonesimulator/DLStarRatingDemo.app
+template: '/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate'
+
+devices:
+  iOS Simulator: 
+    screen: retina_ios5
+
+
+servers:
+  backend:
+    host: 192.168.1.2
+    port: 8080
