@@ -81,7 +81,7 @@
 
 - (void)setStar:(UIImage*)defaultStarImage highlightedStar:(UIImage*)highlightedStarImage {
   for(NSInteger i = 0; i < numberOfStars; i++){
-    [self setStar:defaultStarImage highlitedStar:highlightedStarImage atIndex:i];
+    [self setStar:defaultStarImage highlightedStar:highlightedStarImage atIndex:i];
   }
 }
 
