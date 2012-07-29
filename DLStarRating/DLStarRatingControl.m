@@ -79,6 +79,12 @@
 #pragma mark -
 #pragma mark Customization
 
+- (void)setStar:(UIImage*)defaultStarImage highlightedStar:(UIImage*)highlightedStarImage {
+  for(NSInteger i = 0; i < numberOfStars; i++){
+    [self setStar:defaultStarImage highlightedStar:highlightedStarImage atIndex:i];
+  }
+}
+
 - (void)setStar:(UIImage*)defaultStarImage highlightedStar:(UIImage*)highlightedStarImage atIndex:(int)index {
     DLStarView *selectedStar = (DLStarView*)[self subViewWithTag:index];
     
