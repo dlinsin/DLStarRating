@@ -11,6 +11,15 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		271E58C61738A4B500BF5C35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		271E58CD1738A4B600BF5C35 /* DLStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 271E58CC1738A4B600BF5C35 /* DLStarRating.m */; };
+		271E58D21738A4CE00BF5C35 /* DLStarRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E998CA12D74B0F00141730 /* DLStarRatingControl.m */; };
+		271E58D41738A4CE00BF5C35 /* DLStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E998CC12D74B0F00141730 /* DLStarView.m */; };
+		271E58D61738A4CE00BF5C35 /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E998D112D74B0F00141730 /* UIView+Subviews.m */; };
+		271E58D71738A4E000BF5C35 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		271E58D91738A54700BF5C35 /* DLStarRatingControl.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E998C912D74B0F00141730 /* DLStarRatingControl.h */; };
+		271E58DA1738A54700BF5C35 /* DLStarView.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E998CB12D74B0F00141730 /* DLStarView.h */; };
+		271E58DB1738A54700BF5C35 /* UIView+Subviews.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E998D012D74B0F00141730 /* UIView+Subviews.h */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2899E5220DE3E06400AC0155 /* DLStarRatingDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* DLStarRatingDemoViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
@@ -32,6 +41,10 @@
 		1D3623250D0F684500981E51 /* DLStarRatingDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLStarRatingDemoAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* DLStarRatingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLStarRatingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		271E58C51738A4B500BF5C35 /* libDLStarRating.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDLStarRating.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		271E58C91738A4B600BF5C35 /* DLStarRating-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DLStarRating-Prefix.pch"; sourceTree = "<group>"; };
+		271E58CA1738A4B600BF5C35 /* DLStarRating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLStarRating.h; sourceTree = "<group>"; };
+		271E58CC1738A4B600BF5C35 /* DLStarRating.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLStarRating.m; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* DLStarRatingDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DLStarRatingDemoViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -65,6 +78,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		271E58C21738A4B500BF5C35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271E58D71738A4E000BF5C35 /* CoreGraphics.framework in Frameworks */,
+				271E58C61738A4B500BF5C35 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,8 +105,27 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* DLStarRatingDemo.app */,
+				271E58C51738A4B500BF5C35 /* libDLStarRating.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		271E58C71738A4B500BF5C35 /* DLStarRating */ = {
+			isa = PBXGroup;
+			children = (
+				271E58CA1738A4B600BF5C35 /* DLStarRating.h */,
+				271E58CC1738A4B600BF5C35 /* DLStarRating.m */,
+				271E58C81738A4B600BF5C35 /* Supporting Files */,
+			);
+			path = DLStarRating;
+			sourceTree = "<group>";
+		};
+		271E58C81738A4B600BF5C35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				271E58C91738A4B600BF5C35 /* DLStarRating-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -94,6 +135,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				271E58C71738A4B500BF5C35 /* DLStarRating */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -159,6 +201,19 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		271E58D81738A53800BF5C35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271E58D91738A54700BF5C35 /* DLStarRatingControl.h in Headers */,
+				271E58DA1738A54700BF5C35 /* DLStarView.h in Headers */,
+				271E58DB1738A54700BF5C35 /* UIView+Subviews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		1D6058900D05DD3D006BFB54 /* DLStarRatingDemo */ = {
 			isa = PBXNativeTarget;
@@ -176,6 +231,23 @@
 			productName = DLStarRatingDemo;
 			productReference = 1D6058910D05DD3D006BFB54 /* DLStarRatingDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		271E58C41738A4B500BF5C35 /* DLStarRating */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 271E58D01738A4B600BF5C35 /* Build configuration list for PBXNativeTarget "DLStarRating" */;
+			buildPhases = (
+				271E58C11738A4B500BF5C35 /* Sources */,
+				271E58C21738A4B500BF5C35 /* Frameworks */,
+				271E58D81738A53800BF5C35 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLStarRating;
+			productName = DLStarRating;
+			productReference = 271E58C51738A4B500BF5C35 /* libDLStarRating.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,6 +273,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* DLStarRatingDemo */,
+				271E58C41738A4B500BF5C35 /* DLStarRating */,
 			);
 		};
 /* End PBXProject section */
@@ -237,6 +310,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		271E58C11738A4B500BF5C35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271E58D21738A4CE00BF5C35 /* DLStarRatingControl.m in Sources */,
+				271E58D41738A4CE00BF5C35 /* DLStarView.m in Sources */,
+				271E58D61738A4CE00BF5C35 /* UIView+Subviews.m in Sources */,
+				271E58CD1738A4B600BF5C35 /* DLStarRating.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -265,6 +349,63 @@
 				INFOPLIST_FILE = "DLStarRatingDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = DLStarRatingDemo;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		271E58CE1738A4B600BF5C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/DLStarRating.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DLStarRating/DLStarRating-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		271E58CF1738A4B600BF5C35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/DLStarRating.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DLStarRating/DLStarRating-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -307,6 +448,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		271E58D01738A4B600BF5C35 /* Build configuration list for PBXNativeTarget "DLStarRating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271E58CE1738A4B600BF5C35 /* Debug */,
+				271E58CF1738A4B600BF5C35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DLStarRatingDemo" */ = {
 			isa = XCConfigurationList;
