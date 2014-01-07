@@ -148,6 +148,7 @@
 }
 
 - (void)cancelTrackingWithEvent:(UIEvent *)event {
+	[self.delegate newRating:self :self.rating];
 	[super cancelTrackingWithEvent:event];
 }
 
